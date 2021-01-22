@@ -1,0 +1,30 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center font-weight-bold">
+          Pin
+        </th>
+        <th scope="col" class="text-center font-weight-bold">
+          Original Url
+        </th>
+        <th scope="col" class="text-center font-weight-bold">
+          Shortened Url
+        </th>
+        <th scope="col" class="text-center font-weight-bold">
+          Clicks
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% urls.each do |url| %>
+        <tr>
+          <td><%= url.pinned ? "Pinned" : "Not Pinned" %></td>
+          <td><%= url.original_url %></td>
+          <td><%= "#{root_url}/#{url.slug}" %></td>
+          <td> <%= url.click_count %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
