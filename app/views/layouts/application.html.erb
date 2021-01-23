@@ -10,7 +10,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class='bg-white'>
+    <%=react_component('Header')%>
     <div class="container">
       <%= yield %>
     </div>

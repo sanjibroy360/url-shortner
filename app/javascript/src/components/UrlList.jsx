@@ -4,7 +4,7 @@ import SingleUrlInfo from "./SingleUrlInfo";
 export default function UrlList({ urls }) {
   return (
     <div class="table-responsive">
-      <table class="table table-hover">
+      <table class="table table-hover my-5">
         <caption>List of users</caption>
         <thead>
           <tr>

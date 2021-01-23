@@ -23,7 +23,7 @@ export default function InputUrl() {
   }
 
   return (
-    <div class="input-group mb-3 w-50 mx-auto mt-4">
+    <div class="input-group w-50 mx-auto my-5">
       <input
         value={url}
         type="text"
@@ -40,7 +40,7 @@ export default function InputUrl() {
           id="basic-addon2"
           onClick={handleSubmit}
         >
-          Short
+          Shorten
         </button>
       </div>
     </div>
